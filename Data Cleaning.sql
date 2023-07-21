@@ -46,9 +46,9 @@ OwnerSplitState = PARSENAME(REPLACE(OwnerAddress, ',', '.'), 1)
 
 Update DataCleaning.dbo.NashvilleHousing
 Set SoldAsVacant = Case When SoldAsVacant = 'Y' then 'Yes'
-						When SoldAsVacant = 'N' then 'No'
-				   Else SoldAsVacant
-				   END
+			When SoldAsVacant = 'N' then 'No'
+			Else SoldAsVacant
+		   END
 
 
 ----------- Removing Duplicate values -----------
